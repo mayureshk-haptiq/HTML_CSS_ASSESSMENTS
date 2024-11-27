@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width : 1170px;
+    margin: 27px auto 54px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 140px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    height: 43px;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+header ul {
+    margin-right: 0;
+}
+
+li {
+    margin-left: 33px;
+}
+
+.container {
+    max-width: 963px;
+    margin: 0 148px 71px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 71px;
+}
+
+.profileInfo h1 {
+    width: 500px;
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin: 0;
+}
+
+.profileInfo p {
+    width: 500px;
+    font-size: 16px;
+    line-height: 23.5px;
+    margin-bottom: 40px;
+}
+
+.profileInfo button {
+    width: 208px;
+    height: 47px;
+    background-color: #FF6464;
+    color: white;
+    border: 0;
+    padding: 0;
+    font-size : 20px;
+}
+
+.profileImage {
+    border-radius: calc(243px/2);
+}
+
+
+.containerOverflow {
+    background-color: #EDF7FA;
+    padding: 7px 148px;
+    margin-bottom: 15px;
+}
+
+.recentPosts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.recentPosts h3 {
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+    margin: 0;
+}
+
+.recentPosts a {
+    font-size : 16px;
+    line-height: 23.5px;
+    color: #00A8CC;
+}
+
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts a {
+    width: 418px;
+    height: 295px;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+    border-radius: 5px;
+}
+
+.singlePost {
+    margin: 0 22px;
+    color: #21243D;
+}
+
+.singlePost h2 {
+    height: 85px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 17px;
+}
+
+.singlePost ul {
+    height: 34px;
+    justify-content: start;
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.singlePost ul li {
+    margin: 0;
+    margin-right: 26px;
+}
+
+.singlePost p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 368px;
+}
+
+.works h3 {
+    height: 60px;
+    color: #21243D;
+    font-size: 22px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.works div {
+    display: flex;
+    flex-direction: column;
+}
+
+.works div a {
+    display: flex;
+    padding : 15px 0 ;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.works .singlePost {
+    height: 180px;
+    width: 594px;
+}
+
+.works .singlePost h2 {
+    margin: 0;
+}
+
+.works .singlePost p {
+    width: 100%;
+}
+
+.works .singlePost .workType {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    color: #8695A4;
+font-size: 20px;
+line-height: 29px;
+    margin: 0;
+}
+
+.year {
+    width: 63px;
+    height: 25px;
+    border-radius: calc(25px/2);
+    background-color: #142850;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer li {
+    margin: 0 calc(35px/2);
+}
+
+footer .footer img {
+    height: 30px;
+    width: 30px;
+}
+
+footer p {
+    text-align: center;
+}
+
+button:hover {
+    background-color: grey;
+    opacity: 80%;
+    color: white;
+}
+
+a:hover{
+    background-color: rgba(0, 0, 255, 0.2);
+    opacity: 80%;
+    color: white;
+}
+
+li
+
+
+@media (max-width : 768px) {
+
+    header, nav {
+        width: 100vw;
+        opacity: 0;
+        margin: 0;
+        margin-bottom: 33px;
+    }
+
+    body, html {
+        width: 100vw;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .profile {
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profileInfo {
+        width: 400px;
+        margin: 34px auto 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileInfo h1 {
+        width: 312px;
+        margin: 0 auto 21px;
+        text-align: center;
+    }
+
+    .profileInfo p {
+        width: 328px;
+        margin: 0 auto 27px;
+        text-align: center;
+    }
+
+    .containerOverflow {
+        width: 100vw;
+        padding:  0;
+        margin: 0;
+        margin-bottom: 3px;
+    }
+    
+    .recentPosts {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .recentPosts a {
+        position: absolute;
+        opacity: 0;
+        z-index: 0;
+    }
+    
+    .posts {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .posts a {
+        width: 354px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+
+
+    .singlePost {
+        width: 324px;
+        margin: 0 auto;
+
+    }
+
+    .posts .singlePost .postType {
+        margin-bottom: 19px;
+    }
+
+    .posts .singlePost p {
+        margin: 0;
+        width: 324px;
+    }
+
+    .works {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works a {
+        width: 375px;
+
+    }
+
+    .works div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .works h3 {
+        text-align:  center;
+    }
+
+    .works div a {
+        display: flex;
+        flex-direction: column;
+        margin: 0 13px;
+    }
+
+    .works div a img {
+        align-self: center;
+        width: 339px;
+        height: 230px;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+
+    .works .singlePost {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 344px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+
+    .works .singlePost h2 {
+        margin: 0;
+        height: 30px;
+        margin-bottom: 16px;
+    }
+
+    .works .singlePost .workType {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .works .singlePost p {
+        margin: 0;
+        width: 344px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
