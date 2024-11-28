@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Heebo&family=Lato:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900;&family=Open+Sans:ital@0;1&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Heebo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital@0;1&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -14,72 +14,74 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#">Mayuresh</a>
-        <ul>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="#"></a>
+      <ul class="navMenu">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
     <section>
       <div class="container profile">
         <div class="profileInfo">
           <h1>Hi, I am Mayuresh, Creative Technologist</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+          <div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
           <button type="submit">Download Resume</button>
         </div>
-        <img
-          src="./images/profile.jpg"
-          width="243"
-          height="243"
-          class="profileImage"
-          alt="Profile Photo"
-        />
+        <div class="profileImage">
+          <img src="./images/profile.jpg" alt="Profile Photo" />
+        </div>
       </div>
 
-      <div class="containerOverflow">
-        <div class="recentPosts">
-          <h3>Recent posts</h3>
-          <a href="#viewAllPosts" class="viewAll">View all</a>
-        </div>
-        <div class="posts">
-          <a href="#post1">
-            <div class="singlePost">
-              <h2>Making a design system from scratch</h2>
-              <ul class="postType">
-                <li>12 Feb 2020</li>
-                <li>|</li>
-                <li>Design, Pattern</li>
-              </ul>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </a>
-          <a href="#post2">
-            <div class="singlePost">
-              <h2>Creating pixel perfect icons in Figma</h2>
-              <ul class="postType">
-                <li>12 Feb 2020</li>
-                <li>|</li>
-                <li>Figma, Icon Design</li>
-              </ul>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </a>
+      <div class="postBackground">
+        <div class="container recentPosts">
+          <div class="postsTitle">
+            <h3>Recent posts</h3>
+            <a href="#viewAllPosts" class="viewAll">View all</a>
+          </div>
+          <div class="posts">
+            <a href="#post1">
+              <div class="singlePost">
+                <h2>Making a design system from scratch</h2>
+                <div class="postsInfo">
+                  <span>12 Feb 2020</span>
+                  <span>|</span>
+                  <span>Design, Pattern</span>
+                </div>
+                <div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#post2">
+              <div class="singlePost">
+                <h2>Creating pixel perfect icons in Figma</h2>
+                <div class="postsInfo">
+                  <span>12 Feb 2020</span>
+                  <span>|</span>
+                  <span>Figma, Icon Design</span>
+                </div>
+                <div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -87,49 +89,61 @@
         <h3>Featured works</h3>
         <div>
           <a href="#work1">
-            <img src="./images/default.jpg" width="246" height="180" alt="" />
+            <div>
+              <img src="./images/default.jpg" width="246" height="180" alt="" />
+            </div>
             <div class="singlePost">
               <h2>Designing Dashboards</h2>
               <ul class="workType">
                 <li class="year">2020</li>
                 <li>Dashboard</li>
               </ul>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </div>
           </a>
+
           <a href="#work2">
-            <img src="./images/default.jpg" width="246" height="180" alt="" />
+            <div>
+              <img src="./images/default.jpg" width="246" height="180" alt="" />
+            </div>
             <div class="singlePost">
               <h2>Vibrant Portraits of 2020</h2>
               <ul class="workType">
                 <li class="year">2018</li>
                 <li>Illustration</li>
               </ul>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </div>
           </a>
           <a href="#work3">
-            <img src="./images/default.jpg" width="246" height="180" alt="" />
-
+            <div>
+              <img src="./images/default.jpg" width="246" height="180" alt="" />
+            </div>
             <div class="singlePost">
               <h2>36 Days of Malayalam type</h2>
               <ul class="workType">
                 <li class="year">2018</li>
                 <li>Typography</li>
               </ul>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </div>
           </a>
         </div>
@@ -141,28 +155,28 @@
         <li>
           <img
             class="socialsIcon"
-            src="./images/socials/facebook.png"
+            src="./images/socials/facebook-brands-solid.svg"
             alt="Facebook"
           />
         </li>
         <li>
           <img
             class="socialsIcon"
-            src="./images/socials/instagram.png"
+            src="./images/socials/instagram-brands-solid.svg"
             alt="Instagram"
           />
         </li>
         <li>
           <img
             class="socialsIcon"
-            src="./images/socials/twitter.png"
+            src="./images/socials/twitter-brands-solid.svg"
             alt="Twitter"
           />
         </li>
         <li>
           <img
             class="socialsIcon"
-            src="./images/socials/linkedin.png"
+            src="./images/socials/linkedin-brands-solid.svg"
             alt="LinkedIn"
           />
         </li>
