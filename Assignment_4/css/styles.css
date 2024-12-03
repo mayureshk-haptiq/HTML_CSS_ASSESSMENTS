@@ -251,7 +251,6 @@ nav {
 
 .carousel,
 .recommendations {
-  /* width: 80%; */
   margin: 20px auto;
 }
 
@@ -294,7 +293,6 @@ nav {
 
 .carousel img,
 .recommendations .recommendation {
-  /* width: 100%; */
   border-radius: 10px;
 }
 
@@ -305,8 +303,8 @@ nav {
 
 .slick-prev,
 .slick-next {
-  font-size: 0; /* Hide default content */
-  background-color: transparent; /* Optional: Remove default styles */
+  font-size: 0;
+  background-color: transparent; 
   border: none;
   cursor: pointer;
   z-index: 10;
@@ -346,7 +344,6 @@ nav {
   height: 48px;
   width: 48px;
   color: #333;
-  /* line-height: 1; */
 }
 
 .custom-prev-arrow:hover,
