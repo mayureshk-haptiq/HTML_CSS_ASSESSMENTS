@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Port+Lligat+Slab&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30.6px;
+}
+
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 985px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-family: "Port Lligat Slab", serif;
+  color: #ba7894;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.055em;
+}
+
+nav {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #141414;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 46px;
+}
+
+.navigations li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+}
+
+.dropDown {
+  height: 24px;
+  width: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.lang {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.loginAndSignup {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-height: 50px;
+}
+
+.loginAndSignup a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login {
+  border: 2px solid #141414;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.signup {
+  border-radius: 5px;
+  padding: 14px 24px;
+  background-color: #141414;
+  color: white;
+}
+
+.banner {
+  height: calc(100vh - 100px);
+  background: linear-gradient(
+      90deg,
+      #422a3c 30%,
+      rgba(66, 42, 60, 0.85) 40%,
+      rgba(66, 42, 60, 0.8) 50%,
+      rgba(66, 42, 60, 0.31) 60%,
+      rgba(66, 42, 60, 0) 100%
+    ),
+    url("../images/banner.png");
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+
+.bannerContent {
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  gap: 52px;
+  min-width: 533px;
+  max-width: 950px;
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
+}
+
+.sectionTitle {
+  height: 25.58px;
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 7px;
+}
+
+.sectionHeading {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80.5px;
+  letter-spacing: -0.01rem;
+  color: #f7e5c1;
+  margin-bottom: 24px;
+}
+
+.bannerSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  max-width: 950px;
+}
+
+.searchInputs {
+  min-width: calc(100% - 300px);
+  margin: 14px 40px;
+  /* margin-right: 0; */
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #ba7894;
+}
+
+.input {
+  min-width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input span {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+}
+
+.searchParameter {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  border-bottom: 1px solid black;
+}
+
+.searchParameter input {
+  min-width: calc(100% * 0.9);
+  border: 0;
+}
+
+.searchButton {
+  margin: 0 14px;
+  background-color: #ba7894;
+  border-radius: 56px;
+  width: 210px;
+  height: 66px;
+  color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+
+.searchButton span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.78px;
+}
+
+.carousel,
+.recommendations {
+  /* width: 80%; */
+  margin: 20px auto;
+}
+
+.flexCarousel {
+  margin-bottom: 111px;
+}
+
+.frame {
+  width: 170px;
+  height: 145px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.frame .elipse {
+  position: absolute;
+  left: 20px;
+  width: 96px;
+  height: 96px;
+  border-radius: calc(96px / 2);
+  background-color: #f7e5c180;
+}
+
+.frame img {
+  position: relative;
+  left: 50px;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.imageTitle,
+.imageTitle span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.carousel img,
+.recommendations .recommendation {
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+#carousel,
+#recommedations {
+  display: flex;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0; /* Hide default content */
+  background-color: transparent; /* Optional: Remove default styles */
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-slide {
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  margin: 0 -25px;
+}
+
+#recommedations .slick-slide {
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#recommedations .slick-list {
+  margin: 0 -15px;
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  color: #333;
+  /* line-height: 1; */
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  color: #000;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #ba7894;
+}
+
+.hamburger {
+  display: none;
+}
+
+.recommended {
+  padding: 0 70px 111px;
+}
+
+.headSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-bottom: 70px;
+}
+
+.headSectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.headSectionTitle .sectionTitle {
+  height: unset;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(186, 120, 148, 1);
+}
+
+.headSectionTitle .sectionHeading {
+  font-size: 45px;
+  line-height: 44px;
+  letter-spacing: unset;
+  color: rgba(66, 42, 60, 1);
+  margin-bottom: unset;
+}
+
+.recommendations {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.recommendation {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 280px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.recomImage img,
+.recomImage {
+  width: 100%;
+}
+
+.recomInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.ratingsAndReview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ba7894;
+}
+
+.reviews span {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 18px;
+  color: #141414;
+  line-height: 32px;
+}
+
+.salonDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.salonDetails .name span {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141414;
+}
+
+.salonLocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loc p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+}
+
+.bookNow button {
+  width: 100%;
+  height: 53px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid #ba7894;
+  color: #ba7894;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: white;
+}
+
+.testimonials {
+  padding: 64px 0;
+  background: linear-gradient(128.1deg, #FDFDFD 5.48%, #F0F0F0 89.93%);
+}
+
+.testimonials .headSection {
+  margin: 10px auto;
+  margin-bottom: 56px;
+}
+
+.testimonials .sectionHeading {
+  line-height: 58.5px;
+  color: #141414;
+  letter-spacing: -0.01em;
+}
+
+.teamSection {
+    min-width: 533px;
+    max-width: 950px;
+    background-color: rgba(66, 42, 60, 1);
+    border-radius: 40px;
+    margin: 0 auto 56px;
+}
+
+.teamContent {
+    min-width: 533px;
+    max-width: 940px;
+    padding: 64px 96px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.teamImage img {
+    width: calc(100%);
+}
+
+.teamInfo {
+    max-width: calc((750px - 64px)/2);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 50px 25px;
+    gap: 20px;
+}
+
+.teamNameAndLoc {
+    padding: 0 25px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.teamLocation {
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.teamDetails {
+    padding: 0 25px;
+}
+.teamHeadings {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.teanDetailsPara p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34.2px;
+}
+
+
+.quotesRight {
+    /* align-self: flex-end; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.prevNextTestimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrowWrap {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevTestimonials {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 26px;
+}
+
+.nextTestimonials {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(66, 42, 60, 1);
+    border-radius: 26px;
+}
+
+
+
+footer {
+    background-color: rgba(36, 21, 32, 1);
+}
+
+.footerContent {
+    padding: 76px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footerTitle{
+    display: flex;
+    justify-content: space-between;
+    margin : 0 50px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.socials a {
+    width: 53px;
+    height: 53px;
+    border: 2px solid rgba(236, 191, 211, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+hr {
+    background-color:  rgba(255, 255, 255, 1);
+    opacity: 15%;
+}
+
+.subContent{
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin : 0 50px;
+}
+
+.subContent a {
+    color:  rgba(255, 255, 255, 1);
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: 500;    
+}
+
+.subContent h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    background-color: rgba(22, 8, 19, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.keepInTouch ul li {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 324px; */
+    gap: 20px;
+} 
+
+.keepInTouch .title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25.5px;
+    width: 85px;
+    height: 26px;
+}
+
+a:hover {
+    opacity: 50%;
+    text-decoration: underline;
+}
+
+.bookNow button:hover {
+    background-color: rgba(186, 120, 148, 1);
+    color: white;
+}
+
+.socials a:hover {
+    opacity: 100%;
+    box-shadow: 0 0 5px 1px white;
+}
+ 
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .teamContent {
+    flex-direction: column;
+  }
+
+  .footerTitle {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .subContent {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
