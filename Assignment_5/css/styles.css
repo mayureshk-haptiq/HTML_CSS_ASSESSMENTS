@@ -54,6 +54,9 @@ ul {
 
 .navItemsLeft a {
   color: white;
+  width: 100px;
+  text-align: center;
+  margin: 0 10px;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -490,9 +493,13 @@ select.form-select {
   letter-spacing: 0.01em;
 }
 
-/* .disclaimer .row {
-  align-items: center;
-} */
+.navItemsLeft a:hover {
+  color: white;
+  transform: scale(1.1);
+  font-weight: 900;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 @media (max-width: 990px) {
   .navbar,
@@ -508,6 +515,17 @@ select.form-select {
 @media (max-width: 768px) {
   .navItemsRight a {
     display: none;
+  }
+
+  .navItemsLeft {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .navItemsLeft a {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 30px;
   }
 
   .banner .row,
