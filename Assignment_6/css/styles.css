@@ -162,18 +162,21 @@ input:hover {
 
 .banner {
   height: calc(100vh - 78px);
-  background: url("../images/yellowBanner.png") no-repeat center/cover;
-  position: relative;
+  background: url("../images/bannerBowl.png"), url("../images/yellowBanner.png");
+  background-repeat: no-repeat;
+  background-size: calc(100vh - 400px) , cover;
+  background-position: right 10% bottom -10%, center;
+  /* position: relative;
   z-index: -2;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
-.bannerBowlImg {
+/* .bannerBowlImg {
   position: absolute;
   bottom: -100px;
   z-index: -1;
   right: 10%;
-}
+} */
 
 .bannerContent {
   height: calc(100vh - 78px);
