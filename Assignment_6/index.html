@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+
+    <title>FoodWagon</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logo">
+            <img src="./images/logo.png" width="28" height="29" alt="logo" />
+            <h6>
+              <span class="food">food</span><span class="wagon">wagon</span>
+            </h6>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-evenly"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav deliveryAddress">
+            <li class="nav-item">
+              <h6><strong>Deliver to:</strong></h6>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="deliveryLocation">
+                  <img
+                    src="./images/icons/location.png"
+                    width="18"
+                    height="25"
+                    alt="location"
+                  />
+                  <h6>
+                    Current Location
+                    <strong> Mohammadpur Bus Stand, Dhaka</strong>
+                  </h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav searchLogin">
+            <li class="nav-item">
+              <form class="navbar-form searchBox" action="#">
+                <button type="submit" class="btn btn-default">
+                  <img
+                    src="./images/icons/search.png"
+                    width="18"
+                    height="18"
+                    alt="search"
+                  />
+                </button>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search Food"
+                  />
+                </div>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="loginButton">
+                  <div class="userIcon">
+                    <img
+                      src="./images/icons/user.png"
+                      width="16"
+                      height="18"
+                      alt="user"
+                    />
+                  </div>
+                  <h6><strong>Login</strong></h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="container">
+        <div class="bannerBowlImg">
+          <img
+            src="./images/bannerBowl.png"
+            width="500"
+            height="500"
+            alt="bannerBowl"
+          />
+        </div>
+
+        <div class="col-md">
+          <div class="bannerContent">
+            <div class="col-md-10">
+              <div class="bannerTitle">
+                <h1>Are you starving?</h1>
+                <h5>
+                  Within a few clicks, find meals that are accessible near you
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="cardTabs">
+                <div class="top">
+                  <div class="tab delivery">
+                    <a href="#">
+                      <div class="delieryIcon">
+                        <img
+                          src="./images/icons/deliveryIcon.png"
+                          width="25"
+                          height="18"
+                          alt="delieryIcon"
+                        />
+                      </div>
+                      <span>Delivery</span>
+                    </a>
+                  </div>
+                  <div class="tab pickup">
+                    <a href="#">
+                      <div class="pickupIcon">
+                        <img
+                          src="./images/icons/pickupIcon.png"
+                          width="16"
+                          height="18"
+                          alt="pickupIcon"
+                        />
+                      </div>
+                      <span>Pickup</span>
+                    </a>
+                  </div>
+                </div>
+                <hr />
+                <div class="bottom">
+                  <form class="navbar-form addressBox" action="#">
+                    <img
+                      src="./images/icons/deliveryLocation.png"
+                      width="25"
+                      height="34"
+                      alt="search"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Your Address"
+                    />
+                  </form>
+                  <div class="col-md-3">
+                    <div class="findFoodButton">
+                      <a href="#">
+                        <div class="searchIcon">
+                          <img
+                            src="./images/icons/whiteSearch.png"
+                            width="14"
+                            height="14"
+                            alt="user"
+                          />
+                        </div>
+                        <h6>Find Food</h6>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flashDeals">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dealCard">
+              <div class="col foodPhoto">
+                <div class="discount">
+                  <img
+                    src="./images/dealCards/discount.png"
+                    width="140"
+                    height="83"
+                    alt="discount"
+                  />
+                </div>
+              </div>
+              <div class="col cardInfo">
+                <h5>Greys Vage</h5>
+                <h5 class="countDown">6 Days Remaining</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dealCard">
+              <div class="col foodPhoto">
+                <div class="discount">
+                  <img
+                    src="./images/dealCards/discount.png"
+                    width="140"
+                    height="83"
+                    alt="discount"
+                  />
+                </div>
+              </div>
+              <div class="col cardInfo">
+                <h5>Greys Vage</h5>
+                <h5 class="countDown">6 Days Remaining</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dealCard">
+              <div class="col foodPhoto">
+                <div class="discount">
+                  <img
+                    src="./images/dealCards/discount.png"
+                    width="140"
+                    height="83"
+                    alt="discount"
+                  />
+                </div>
+              </div>
+              <div class="col cardInfo">
+                <h5>Greys Vage</h5>
+                <h5 class="countDown">6 Days Remaining</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dealCard">
+              <div class="col foodPhoto">
+                <div class="discount">
+                  <img
+                    src="./images/dealCards/discount.png"
+                    width="140"
+                    height="83"
+                    alt="discount"
+                  />
+                </div>
+              </div>
+              <div class="col cardInfo">
+                <h5>Greys Vage</h5>
+                <h5 class="countDown">6 Days Remaining</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="working">
+      <div class="container">
+        <div class="col">
+          <div class="row workTitle">
+            <p>How does it work</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="worksCard">
+                <div class="row workIcon justify-content-center">
+                  <img src="./images/works/card1.png" alt="" />
+                </div>
+
+                <div class="row workInfo text-center">
+                  <h6><b>Select location</b></h6>
+                  <p>Choose the location where your food will be delivered.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="worksCard">
+                <div class="row workIcon justify-content-center">
+                  <img src="./images/works/card1.png" alt="" />
+                </div>
+
+                <div class="row workInfo text-center">
+                  <h6><b>Select location</b></h6>
+                  <p>Choose the location where your food will be delivered.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="worksCard">
+                <div class="row workIcon justify-content-center">
+                  <img src="./images/works/card1.png" alt="" />
+                </div>
+
+                <div class="row workInfo text-center">
+                  <h6><b>Select location</b></h6>
+                  <p>Choose the location where your food will be delivered.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="worksCard">
+                <div class="row workIcon justify-content-center">
+                  <img src="./images/works/card1.png" alt="" />
+                </div>
+
+                <div class="row workInfo text-center">
+                  <h6><b>Select location</b></h6>
+                  <p>Choose the location where your food will be delivered.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchFood">
+      <div class="container">
+        <div class="col-md header">
+          <div class="row justify-content-between">
+            <div class="col-md">
+              <h4><b>Search by Food</b></h4>
+            </div>
+            <div class="col-md">
+              <div class="searchFoodButtons">
+                <div class="viewAll">
+                  <a href="#">View All ></a>
+                </div>
+                <div class="prevNextBtn">
+                  <button class="customPrev">
+                    <img src="./images/icons/arrowPrev.png" alt="prevArrow" />
+                  </button>
+                  <button class="customNext">
+                    <img src="./images/icons/arrowNext.png" alt="nextArrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories">
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="sliderPhoto">
+              <img src="./images/slider/food1.png" alt="" />
+              <p>Pizza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="featuresContent">
+          <div class="featureCard">
+            <div class="featureImg">
+              <img
+                src="./images/features/feature1.png"
+                width="136"
+                height="136"
+                alt="feature1"
+              />
+            </div>
+            <span>Daily Discounts</span>
+          </div>
+          <hr />
+          <div class="featureCard">
+            <div class="featureImg">
+              <img
+                src="./images/features/feature2.png"
+                width="136"
+                height="136"
+                alt="feature1"
+              />
+            </div>
+            <span>Live Tracing</span>
+          </div>
+          <hr />
+          <div class="featureCard">
+            <div class="featureImg">
+              <img
+                src="./images/features/feature3.png"
+                width="136"
+                height="136"
+                alt="feature1"
+              />
+            </div>
+            <span>Quick Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="appDownload">
+      <div class="container">
+        <div class="downloadContents">
+          <!-- <img src="./images/app/bothPhones.png" width="600" alt="" /> -->
+
+          <div class="col-md-5 downloadInfo">
+            <h2>Install the app</h2>
+            <p>
+              It's never been easier to order food. Look for the finest
+              discounts and you'll be lost in a world of delectable food.
+            </p>
+            <div class="downloadButtons">
+              <a href="#">
+                <div class="btnIcon">
+                  <img
+                    src="./images/download/playstore.png"
+                    width="35"
+                    alt="playstore"
+                  />
+                </div>
+                <div>
+                  <h4>Get it on</h4>
+                  <h3><strong>Google Play</strong></h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="btnIcon">
+                  <img
+                    src="./images/download/apple.png"
+                    width="35"
+                    alt="playstore"
+                  />
+                </div>
+                <div>
+                  <h4>Download on the</h4>
+                  <h3><strong>App Store</strong></h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="container">
+        <div class="detailsContent">
+          <div class="row detail">
+            <div class="col-md-4 detailInfo">
+              <h2><span>Best deals</span> Crispy Sandwiches</h2>
+              <p>
+                Enjoy the large size of sandwiches. Complete perfect slice of
+                sandwiches.
+              </p>
+              <button>PROCEED TO ORDER ></button>
+            </div>
+            <div class="col-md-8 detailImg"></div>
+          </div>
+          <div class="row detail odd">
+            <div class="col-md-4 detailInfo">
+              <h2><span>Best deals</span> Crispy Sandwiches</h2>
+              <p>
+                Enjoy the large size of sandwiches. Complete perfect slice of
+                sandwiches.
+              </p>
+              <button>PROCEED TO ORDER ></button>
+            </div>
+            <div class="col-md-8 detailImg"></div>
+          </div>
+          <div class="row detail">
+            <div class="col-md-4 detailInfo">
+              <h2><span>Best deals</span> Crispy Sandwiches</h2>
+              <p>
+                Enjoy the large size of sandwiches. Complete perfect slice of
+                sandwiches.
+              </p>
+              <button>PROCEED TO ORDER ></button>
+            </div>
+            <div class="col-md-8 detailImg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerAd">
+      <div class="container">
+        <div class="row footerAdContent">
+          <div class="col-7">
+            <h3>Are you ready to order with the best deals?</h3>
+            <button>PROCEED TO ORDER ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row footerContent">
+          <div class="col-md-7 menu">
+            <div class="row">
+              <div class="col-md-3">
+                <h4>Company</h4>
+                <ul class="company">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Contact</h4>
+                <ul class="contact">
+                  <li><a href="#">Help & Support</a></li>
+                  <li><a href="#">Partner with us</a></li>
+                  <li><a href="#">Ride with us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Legal</h4>
+                <ul class="legal">
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Refund & Cancellation</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="followUs">
+              <h4>FOLLOW US</h4>
+              <ul class="socials">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./images/socials/instagram.png"
+                      width="24"
+                      alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./images/socials/facebook.png"
+                      width="24"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./images/socials/twitter.png"
+                      width="24"
+                      alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="subscription">
+              <h4>Receive exclusive offers in your mailbox</h4>
+              <form>
+                <div class="email-input-container">
+                  <span class="email-icon"
+                    ><img src="./images/icons/mail.png" width="24" alt=""
+                  /></span>
+                  <input
+                    class="email-input"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <button>Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="disclaimer">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-4">
+              <h6 class="copyright">
+                All rights Reserved &copy; <strong>Your Company, 2021</strong>
+              </h6>
+            </div>
+            <div class="col-md-4">
+              <h6 class="credit">
+                Made with &hearts; by <strong>Themewagon</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Index.js -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -314,27 +314,21 @@ nav {
   display: none;
 }
 
-.slick-slide {
+#carousel .slick-slide {
   margin: 0 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.slick-list {
-  margin: 0 -25px;
-}
 
 #recommedations .slick-slide {
   margin: 0 15px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-#recommedations .slick-list {
+/* #recommedations .slick-list {
   margin: 0 -15px;
-}
+} */
 
 .custom-prev-arrow,
 .custom-next-arrow {
